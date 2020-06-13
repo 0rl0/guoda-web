@@ -19,9 +19,6 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-
-
-
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
@@ -29,7 +26,14 @@ jobs:
       run: sudo snap install hugo
 
     - name: Fetch submodules
-      run: git submodule update --init --recursive
+      shell: bash
+      env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
+      run: |
+        echo $PRIVATE_KEY > id_rsa
+        chmod 400 id_rsa
+        eval `ssh-agent -s`
+        ssh-agent $(ssh-add id_rsa; git submodule update --init --recursive)
 
     - name: Build site
       run: hugo
