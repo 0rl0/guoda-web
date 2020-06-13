@@ -22,7 +22,8 @@ jobs:
 
     - name: Fetch submodules
       shell: bash
-      run: git submodule update --init --recursive
+      run: | 
+          git submodule add -b master git@github.com:Gruodyte/Gruodyte.github.io.git public -f
 
     - name: Install Hugo
       run: sudo snap install hugo
