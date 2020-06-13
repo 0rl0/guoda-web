@@ -19,7 +19,7 @@ name    = "Portfolio"
 url     = "#works"
 weight  = 4
 [[menu.main]]
-name    = "Practise"
+name    = "Practice"
 url     = "#works2"
 weight  = 5
 [[menu.main]]
@@ -68,7 +68,7 @@ title   = "Portfolio"
 # Practise Section On Homepage
 [params.portfolio2]
 enable  = true
-title   = "Practise/Studies"
+title   = "Practice/Studies"
 
 
 # social icon

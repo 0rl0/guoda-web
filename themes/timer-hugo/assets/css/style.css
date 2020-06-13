@@ -111,6 +111,14 @@ ul li {
 }
 a:hover {
     text-decoration: none;
+    color: #ede2f1; !important
+}
+a{
+	color: #ffffff;
+	font-size: 1rem;
+}
+.ion-social-instagram {
+	font-size: 2rem;
 }
 .slick-slide:focus {
     outline: 0;
