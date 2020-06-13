@@ -38,6 +38,6 @@ jobs:
 
         git add .
         msg="rebuilding site $(date)"
-        git commit -m "$msg" || true
+        git commit -m "$msg" || true # ignore error if nothing was changed
+        git push origin HEAD:master
 
-        git push origin master
