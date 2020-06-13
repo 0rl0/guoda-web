@@ -25,6 +25,9 @@ jobs:
     - name: Install Hugo
       run: sudo snap install hugo
 
+    - name: Fetch submodules
+      run: git submodule update --init --recursive
+
     - name: Build site
       run: hugo
 
