@@ -1,6 +1,6 @@
 baseURL = "https://guoda.savolro.com/"
 languageCode = "en-us"
-title = "Guoda O | Portfolio"
+title = "Guoda Orlovaite | Portfolio"
 theme = "timer-hugo"
 
 # We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
@@ -44,7 +44,7 @@ contactFormAction = "#" # contact form works with https://formspree.io
 [params.banner]
 enable  = true
 bgImage = "images/slider.mp4"
-heading = "GUODA Orlovaite"
+heading = "GUODA ORLOVAITE"
 description = "The one that's hella awkward at any given situation"
 
 # Homepage About Section
