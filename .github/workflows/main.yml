@@ -36,14 +36,14 @@ jobs:
 
     - name: Publish site
       env:
-          SUPER_SECRET: ${{ secrets.PRIVATE_KEY }}
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
       run: |
         cd public
-        git add .
 
         git config user.email "borlovas@gmail.com"
         git config user.name "Savolro"
 
+        git add .
         msg="rebuilding site $(date)"
         git commit -m "$msg" || true
 
