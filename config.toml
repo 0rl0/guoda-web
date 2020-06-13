@@ -1,0 +1,77 @@
+baseURL = "https://guoda.savolro.com/"
+languageCode = "en-us"
+title = "Guoda Orlovaite | Portfolio"
+theme = "timer-hugo"
+
+# We Used Ionicons Icon font for Icon, for more details check this link - https://ionicons.com/
+
+# Navbar Menus
+[[menu.main]]
+name    = "About"
+url     = "#about"
+weight  = 2
+[[menu.main]]
+name    = "Resume"
+url     = "#feature"
+weight  = 3
+[[menu.main]]
+name    = "Portfolio"
+url     = "#works"
+weight  = 4
+[[menu.main]]
+name    = "Practise"
+url     = "#works2"
+weight  = 5
+[[menu.main]]
+name    = "Contact"
+url     = "#call-to-action"
+weight  = 6
+
+# Site Params
+[params]
+home = "Home"
+logo = "images/logo.png"
+dateFormat = "6 January 2006"
+# Meta data
+description = "Portfolio"
+author = "sloira"
+# Google Analitycs
+googleAnalitycsID = "Your ID"
+# contact form action
+contactFormAction = "#" # contact form works with https://formspree.io
+
+# Banner Section
+[params.banner]
+enable  = true
+bgImage = "images/slider.mp4"
+heading = "GUODA ORLOVAITE"
+description = "The one that's hella awkward at any given situation"
+
+# Homepage About Section
+[params.about]
+enable  = true
+content = "While I am shy, it's difficult to stop me from talking at times. <br><br> While I love sweets, I prefer baking them rather than eating. <br><br> I love drawing, the happiness I get while doing so. <br><br> Alright alright, let's get to business, we all know what we came here for, and I really hope not for poems! <br><br><b> Who is this mysterious Guoda Orlovaite? </b><br><br> I have been playing games for as long as I can remember, having two older brothers might have something to do with it. <br><br> As cliché as it is, games are one of my biggest inspirations while drawing. They help me to come up with ideas. <br><br> Becoming someone, who can create masterpieces myself, has been a goal of mine for as long as I can remember."
+image   = "images/about/about.jpg"
+
+# Call to Action
+[params.cta]
+enable  = true
+title   = "Telepathy is one of my weaker skills, so please use my gmail instead!"
+content = "guodaorlovaite@gmail.com"
+
+
+# Portfolio Section On Homepage
+[params.portfolio]
+enable  = true
+title   = "Portfolio"
+
+# Practise Section On Homepage
+[params.portfolio2]
+enable  = true
+title   = "Practise/Studies"
+
+
+# social icon
+[[params.socialIcon]]
+icon = "ion-social-instagram"
+url = "https://www.instagram.com/pengupun/"
