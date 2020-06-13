@@ -19,6 +19,9 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+
+
+
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
@@ -32,14 +35,17 @@ jobs:
       run: hugo
 
     - name: Publish site
+      env:
+          PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
       run: |
         cd public
+
+        git config user.email "borlovas@gmail.com"
+        git config user.name "Savolro"
+
         git add .
         msg="rebuilding site $(date)"
-        if [ -n "$*" ]; then
-            msg="$*"
-        fi
-        git commit -m "$msg"
+        git commit -m "$msg" || true
 
-        git push origin master
-
+        echo $PRIVATE_KEY > id_rsa
+        ssh-agent $(ssh-add id_rsa; git push origin master)
