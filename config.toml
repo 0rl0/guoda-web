@@ -44,7 +44,7 @@ contactFormAction = "#" # contact form works with https://formspree.io
 [params.banner]
 enable  = true
 bgImage = "images/slider.mp4"
-heading = "GUODA O"
+heading = "GUODA Orlovaite"
 description = "The one that's hella awkward at any given situation"
 
 # Homepage About Section
