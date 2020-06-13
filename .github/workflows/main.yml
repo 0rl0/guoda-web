@@ -22,19 +22,20 @@ jobs:
     # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
     - uses: actions/checkout@v2
 
-    - name: Install Hugo
-      run: sudo snap install hugo
-
     - name: Fetch submodules
       shell: bash
       env:
           PRIVATE_KEY: ${{ secrets.PRIVATE_KEY }}
       run: |
-        echo $PRIVATE_KEY > id_rsa
-        chmod 400 id_rsa
-        eval `ssh-agent -s`
-        ssh-agent $(ssh-add id_rsa; git submodule update --init --recursive)
 
+    - name: Install SSH key
+      uses: shimataro/ssh-key-action@v2
+      with:
+          key: ${{ secrets.PRIVATE_KEY }}
+          name: id_rsa # optional
+
+    - name: Install Hugo
+      run: sudo snap install hugo
     - name: Build site
       run: hugo
 
