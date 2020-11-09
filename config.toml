@@ -50,7 +50,7 @@ description = "The one that's hella awkward at any given situation"
 # Homepage About Section
 [params.about]
 enable  = true
-content = "Almost as any kid out there, I enjoyed doodling on the walls. While growing up, I slowly realized that art defines my world, so I continued drawing.<br><br>Currently, I am doing my best to achieve my goal - getting a position where I could create art and learn from the best.<br><br>Improving is one of my biggest objectives. Not only in mastering digital art, but traditional art and graphic design too. I constantly seek to become a better version of myself.<br><br>I am keen on learning various digital techniques, and I strive to master them. Thanks to the opportunity I‘ve got at my current workplace, I‘ve started learning Illustrator in the year 2020. Now, most of my time at work I spend making vector elements for various projects.<br><br>I am flexible and curious person, therefore, if I set my mind to it – I accomplish it."
+content = "Almost as any kid out there, I enjoyed doodling on the walls. While growing up, I slowly realized that art defines my world, so I continued drawing.<br><br>Currently, I am doing my best to achieve my goal - getting a position where I could create art and learn from the best.<br><br>Improving is one of my biggest objectives. Digital art is my biggest passion, therefore I constantly seek to become better at it.<br><br>I am flexible and curious person, therefore, if I set my mind to it – I accomplish it."
 image   = "images/about/about.jpg"
 
 # Call to Action
