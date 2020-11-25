@@ -18,10 +18,10 @@ weight  = 3
 name    = "Portfolio"
 url     = "#works"
 weight  = 4
-[[menu.main]]
-name    = "Practice"
-url     = "#works2"
-weight  = 5
+#[[menu.main]]
+#name    = "Vectors"
+#url     = "#works2"
+#weight  = 5
 [[menu.main]]
 name    = "Contact"
 url     = "#call-to-action"
@@ -50,7 +50,7 @@ description = "The one that's hella awkward at any given situation"
 # Homepage About Section
 [params.about]
 enable  = true
-content = "While I am shy, it's difficult to stop me from talking at times. <br><br> While I love sweets, I prefer baking them rather than eating. <br><br> I love drawing, the happiness I get while doing so. <br><br> Alright alright, let's get to business, we all know what we came here for, and I really hope not for poems! <br><br><b> Who is this mysterious Guoda Orlovaite? </b><br><br> I have been playing games for as long as I can remember, having two older brothers might have something to do with it. <br><br> As cliché as it is, games are one of my biggest inspirations while drawing. They help me to come up with ideas. <br><br> Becoming someone, who can create masterpieces myself, has been a goal of mine for as long as I can remember."
+content = "Almost as any kid out there, I enjoyed doodling on the walls. While growing up, I slowly realized that art defines my world.<br><br>Currently, I am doing my best to achieve my goal - getting a position where I could create art and learn from the best.<br><br>Improving is one of my biggest objectives. Digital art is my biggest passion, therefore I constantly seek to become better at it.<br><br>I am flexible and curious person, therefore, if I set my mind to it – I accomplish it."
 image   = "images/about/about.jpg"
 
 # Call to Action
@@ -67,8 +67,8 @@ title   = "Portfolio"
 
 # Practise Section On Homepage
 [params.portfolio2]
-enable  = true
-title   = "Practice/Studies"
+enable  = false
+title   = "Vectors"
 
 
 # social icon
